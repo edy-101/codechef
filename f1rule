@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+int t, x,y, sp;
+cin>>t;
+while (t>0) {
+    cin>>x>>y;
+    sp=x*1.07;
+    if (y<=sp) cout<<"yes"<<endl;
+    else cout<<"no"<<endl;
+    t--;
+}
+return 0;
+}
