@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+int t, n, m, k;
+cin>>t;
+while (t>0) {
+    cin>>n>>m>>k;
+    if (n+k<=m) cout<<"yes"<<endl;
+    else cout<<"no"<<endl;
+    t--;
+}
+return 0;
+}
