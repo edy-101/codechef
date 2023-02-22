@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,n, sq;
+    cin>>t;
+    while(t>0)
+    {
+        int n;
+         cin >> n;
+         sq=sqrt(n);
+         cout << sq << endl;
+         t--;
+    }
+    return 0;
+}
