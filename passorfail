@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t, n, x, p, a;
+	cin>>t;
+	while (t>0) {
+	    cin>>n;
+	    cin>>x;
+	    cin>>p;
+	    a=(3*x) + ((n-x)*(-1));
+	    if (a>=p) cout<<"PASS"<<endl;
+    else cout<<"FAIL"<<endl;
+    t--;
+	}
+	return 0;
+}
