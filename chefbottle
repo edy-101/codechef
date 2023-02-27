@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, n, m, k, t;
+    cin>>t;
+    while (t>0){
+        cin>>n>>x>>k;
+        m=k/x;
+        if (m>n) cout<<n<<endl;
+        else cout<<m<<endl;
+        t--;
+    }
+	return 0;
+}
