@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, t, x;
+    cin>>a>>b>>c>>x;
+    if (x==a || x==b || x==c) cout<<"yes";
+    else cout<<"no";
+	return 0;
+}
