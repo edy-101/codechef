@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, x1, y1, x2, y2, x, y, m;
+	cin>>t;
+	while (t>0){
+	    cin>>x1>>y1>>x2>>y2;
+	    x= abs(x1 - x2);
+	    y= abs(y1 - y2);
+	    m= max(x , y);
+	    cout<<m<<endl;
+	    t--;
+	}
+	return 0;
+}
