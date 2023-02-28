@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t, x, y, d;
+    cin>>t;
+    while(t>0) {
+        cin>>x>>y>>d;
+        if (abs(x-y)<=d) cout<<"yes"<<endl;
+        else cout<<"no"<<endl;
+        t--;
+    }
+	return 0;
+}
