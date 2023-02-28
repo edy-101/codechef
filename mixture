@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+int t, a, b;
+cin>>t;
+while(t>0){
+    cin>>a>>b; //a-solid , b-liquid
+    if (a>0 && b>0) cout<<"Solution"<<endl;
+    else if (b==0) cout<<"Solid"<<endl;
+    else cout<<"Liquid"<<endl; // this is case sensitive
+    t--;
+}
+return 0;
+}
