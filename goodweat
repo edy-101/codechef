@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while (t>0) {
+	    int a[7], i;
+	    
+	    for(i=0; i<7; i++){
+	      cin>>a[i];
+	    }
+	    
+	    int sun=0;
+	    for(i=0; i<7; i++){
+	    if (a[i]==1) sun++;
+	    }
+	    
+	    if (sun>=4) cout<<"yes"<<endl;
+	    else cout<<"no"<<endl;
+	    t--;
+	}
+	return 0;
+}
