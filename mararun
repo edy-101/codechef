@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, D, d, a, b, c, kms;
+	cin>>t;
+	while (t--){
+	   cin>>D>>d>>a>>b>>c;
+	   kms=D*d;
+	   if (kms>=10 && kms<21) cout<<a<<endl;
+	    else if (kms>=21 && kms<42) cout<<b<<endl;
+	    else if (kms>=42) cout<<c<<endl;
+	    else cout<<"0"<<endl;
+	}
+	return 0;
+}
