@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t, sa, sb, sc;
+    cin>>t;
+    while (t>0) {
+        cin>>sa>>sb>>sc;
+        if ((sc<sb) && (sc<sa)) cout<<"Alice"<<endl;
+        else if ((sb<sc) && (sb<sa)) cout<<"Bob"<<endl;
+        else cout<<"Draw"<<endl;
+        t--;
+    }
+	return 0;
+}
