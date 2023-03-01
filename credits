@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t, x;
+    cin>>t;
+    while (t>0) {
+        cin>>x;
+            if (x>65) cout<<"overload"<<endl;
+            else if (x<35) cout<<"underload"<<endl;
+            else cout<<"normal"<<endl;
+        t--;
+    }
+	return 0;
+}
