@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, y, h, c, req;
+	cin>>t;
+	while(t>0) {
+	    cin>>h>>x>>y>>c;
+	    req= (x + (y/2))*h;
+	    if (req<=c) cout<<"yes"<<endl;
+	    else cout<<"no"<<endl;
+	    t--;
+	}
+	return 0;
+}
