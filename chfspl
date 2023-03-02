@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t, a, b, c;
+    cin >> t;
+    while (t--) {
+        cin >> a >> b >> c;
+        int minimum = min(min(a, b), c);
+        int maximum_sum = a + b + c - minimum;
+        cout << maximum_sum << endl;
+    }
+    return 0;
+}
