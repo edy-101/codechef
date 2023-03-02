@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	float cost1, cost2, x1, y1, x2, y2;
+	cin>>t;
+	while(t>0) {
+	    cin>>x1>>x2>>y1>>y2;
+	    
+	    cost1=y1/x1;
+	    cost2=y2/x2;
+	    
+	    if (cost1<cost2) cout<<-1<<endl;
+	    else if (cost2==cost1) cout<<0<<endl;
+	    else cout<<1<<endl;
+	    
+	    t--;
+	}
+	return 0;
+}
