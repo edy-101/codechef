@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t, z, y, a, b, c, rem;
+	cin>>t;
+	while(t>0) {
+	    cin>>z>>y>>a>>b>>c;
+	    rem=z-y;
+	    if ((a+b+c)<=rem) cout<<"yes";
+	    else cout<<"no";
+	    cout<<endl;
+	    t--;
+	}
+	return 0;
+}
