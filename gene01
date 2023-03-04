@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+	char m, f;
+	cin>>m>>f;
+	if (m==f) cout<<m<<endl;
+	else if (m=='B' && f=='G' || m=='G' && f=='B') cout<<"B"<<endl;
+	else if (m=='B' && f=='R' || m=='R' && f=='B') cout<<"R"<<endl;
+	else cout<<"R"<<endl;
+	return 0;
+}
