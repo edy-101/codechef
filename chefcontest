@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t, x, y, p, q, c1, c2; //chef=c1; chefina=c2
+	cin>>t;
+	while(t>0) {
+	    cin>>x>>y>>p>>q;
+	    c1= (p*10)+x;
+	    c2= (q*10)+y;
+	    
+	    if (c1>c2) cout<<"chefina"<<endl;
+	    else if (c1<c2) cout<<"chef"<<endl;
+	    else cout<<"draw"<<endl;
+	    
+	    t--;
+	}
+	return 0;
+}
