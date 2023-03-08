@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, r1, w1, c1, r2, w2, c2, counta, countb;
+	cin>>t;
+	while(t>0) {
+	    cin>>r1>>w1>>c1;
+	    cin>>r2>>w2>>c2;
+	    counta=0, countb=0;
+	    
+	    if (r1>r2) counta++;
+	    else countb++;
+	    
+	    if (w1>w2) counta++;
+	    else countb++;
+	    
+	    if (c1>c2) counta++;
+	    else countb++;
+	    
+	    if (counta>countb) cout<<"A"<<endl;
+	    else cout<<"B"<<endl;
+	    
+	    t--;
+	}
+	return 0;
+}
