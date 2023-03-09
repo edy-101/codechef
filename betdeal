@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, a, b, fi, se;
+	cin>>t;
+	while (t--) {
+	    cin>>a>>b;
+	    fi=100-a;
+	    se=200-(b*2);
+	    if (fi<se) cout<<"first"<<endl;
+	    else if (fi>se)cout<<"second"<<endl;
+	    else cout<<"both"<<endl;
+	}
+	return 0;
+}
