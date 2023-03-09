@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t, x, y, earn=0;
+cin>>t;
+
+while (t>0) {
+    cin>>x>>y;
+    if (y>x) {
+        earn = ((y-x)*2)+ (x*1);
+    }
+    else {
+        earn=y*1;
+    }
+    cout<<earn<<endl;
+    t--;
+}
+	return 0;
+}
