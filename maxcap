@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, y;
+	cin>>t;
+	while(t>0){
+	    cin>>x>>y;
+	    if (x<=8){
+	        if (x*y<=500) cout<<"yes"<<endl;
+	        else cout<<"no"<<endl;
+	    }
+	  
+	    else cout<<"no"<<endl;
+	    t--;
+	}
+	return 0;
+}
