@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while (t>0) {
+	    int n;
+	    cin>>n;
+	    int a, h=8; //this month has already 4 sunday and saturday each thus already 8 holidays
+	    for(int i=0; i<n; i++) {
+	        cin>>a;
+	        if(a%7!=6 && a%7!=0) h++; // since day 1 is monday,
+	        //day 6 will be saturday and day 7 will be sunday
+	        //so if it neither sunday or saturday, it is not colapsing with other holiday and it can be counted as a seperated day of holiday thus increasing number of hoidays
+	    }
+	    cout<<h<<endl;
+	    t--;
+	}
+	return 0;
+}
