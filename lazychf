@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, m, d, tiime;
+	cin>>t;
+	while(t--) {
+	    cin>>x>>m>>d;
+	    tiime= min(x*m , x+d);
+	    cout<<tiime<<endl;
+	}
+	return 0;
+}
