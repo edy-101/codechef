@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, k, pos;
+	cin>>t;
+	while(t>0){
+	    cin>>k;
+	    if(k%2==0){
+	       pos= k;
+	    }
+	    else {
+	       pos=  (3*k + 6)/3;
+	    }
+	    cout<<pos<<endl;
+	    t--;
+	}
+	return 0;
+}
