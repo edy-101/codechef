@@ -9,7 +9,7 @@ int main() {
 	       pos= k;
 	    }
 	    else {
-	       pos=  (3*k + 6)/3;
+	       pos=(3*((k/2)+1)) - (k/2);
 	    }
 	    cout<<pos<<endl;
 	    t--;
