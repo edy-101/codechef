@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, a[3], b[3], i;
+	cin>>t;
+	while(t--) {
+	    int one1=0, zero1=0, one2=0, zero2=0;
+	    for(i=0; i<3; i++) {
+	        cin>>a[i];
+	    }
+	    
+	    for(i=0; i<3; i++) {
+	        cin>>b[i];
+	    }
+	    
+	    for(i=0; i<3; i++) {
+	        if (a[i]==1) one1++;
+	        else zero1++;
+	    }
+	    
+	    for(i=0; i<3; i++) {
+	        if (b[i]==1) one2++;
+	        else zero2++;
+	    }
+	    
+	    if(one1==one2 && zero1==zero2) cout<<"Pass"<<endl;
+	    else cout<<"Fail"<<endl;
+	}
+	return 0;
+}
