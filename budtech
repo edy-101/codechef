@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, r;
+	cin>>t;
+	while(t--){
+	    cin>>r;
+	    int r1= r*1000;
+	    int rest=r1/2;
+	    int amt=rest/5;
+	    cout<<amt<<endl
+	}
+	return 0;
+}
