@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, y, xr, yr, d;
+	float a, b, count;
+	cin>>t;
+	while(t--) {
+	    cin>>x>>y>>xr>>yr>>d;
+	    a=x/xr; //a is the number of days chef's food supply will last
+	    b=y/yr; //b is the number of days chef's water supply will last
+	    count=min(a, b); //since chef cannot last without supply of food or water
+	    //check if the days chef has supply of food and water is more than or equal to the number of days reqd. to build a boat and reach shore
+	    if (count>=d) cout<<"yes"; 
+	    else cout<<"no";
+	    cout<<endl;
+	}
+	return 0;
+}
