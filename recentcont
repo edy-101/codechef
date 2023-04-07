@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--) {
+	    int n, i;
+	    string a;
+	    cin>>n;
+	    int count38=0, count108=0;
+	    for(i=0; i<n; i++) {
+	        cin>>a;
+	        if (a=="START38") count38++;
+	        else count108++;
+	    }
+	    cout<<count38<<" "<<count108<<endl;
+	}
+	return 0;
+}
