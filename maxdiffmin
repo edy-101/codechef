@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, a, b, c, maxi, mini, res;
+	cin>>t;
+	while(t--){
+	    cin>>a>>b>>c;
+	    maxi= max(max(a, b), c);
+	    mini= min(min(a, b), c);
+	    res= maxi-mini;
+	    cout<<res<<endl;
+	}
+	return 0;
+}
