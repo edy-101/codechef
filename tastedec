@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y, t;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    int t1 = 2*x; //chocolate
+	    int t2 = 5*y; //candy
+	    if (t1>t2) cout<<"Chocolate"<<endl;
+	    else if (t2>t1) cout<<"Candy"<<endl;
+	    else cout<<"Either"<<endl;
+	}
+	return 0;
+}
