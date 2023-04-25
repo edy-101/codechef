@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, p, q, fine;
+	cin>>t;
+	while(t--){
+	    cin >> x >> p >> q;
+	    fine= (p - q) * x;
+	    cout<< fine <<endl;
+	}
+	return 0;
+}
