@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y, t, cost;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    if(y>2*x){
+	        cost=5*x;
+	    }
+	    else
+	    {
+	        cost= (2*y)+x;
+	    }
+	    cout<<cost<<endl;
+	}
+	return 0;
+}
