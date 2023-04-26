@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x;
+	cin>>t;
+	while(t--){
+	   cin>>x; //cost of item
+	   int tem=x;
+	   int y= x%10;
+	   if(y>=5) tem=x+(10-y);
+	   else tem=x-y;
+	   int ret= 100-tem;
+	   cout<<ret<<endl;
+	}
+	return 0;
+}
