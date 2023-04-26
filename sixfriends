@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y, t;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    int mini= min(3*x, 2*y);
+	    cout<<mini<<endl;
+	}
+	return 0;
+}
