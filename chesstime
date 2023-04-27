@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, n;
+	cin>>t;
+	while(t--){
+	   cin>>n;
+	   int tim= n*60;
+	   int num= tim/20;
+	   cout<<num<<endl;
+	}
+	return 0;
+}
