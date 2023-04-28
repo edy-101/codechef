@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, n, m, count;
+	cin>>t;
+	while(t--){
+	    cin>>n>>m;
+	    count=(n*2)+(m*4);
+	    cout<<count<<endl;
+	}
+	return 0;
+}
