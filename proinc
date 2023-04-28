@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, y, cp, sp, pro;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    cp=x-y;
+	    sp=(11* x)/10;
+	    pro=sp-cp;
+	    cout<<pro<<endl;
+	}
+	return 0;
+}
