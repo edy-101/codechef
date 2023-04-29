@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, dis1, dis2, dis;
+	cin>>t;
+	while(t--){
+	    cin>>x;
+	    dis1=0.1 *x;
+	    dis2= 100;
+	    dis=max(dis1, dis2);
+	    cout<<dis<<endl;
+	}
+	return 0;
+}
