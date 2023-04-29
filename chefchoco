@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, c, x, y;
+	cin>>t;
+	while(t--){
+	    cin>>c>>x>>y;
+	    int rem=c-x;
+	    int cost=y*rem;
+	    cout<<cost<<endl;
+	}
+	return 0;
+}
