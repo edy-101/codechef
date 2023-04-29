@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t, x;
+	float n;
+	cin>>t;
+	while(t--){
+	    cin>>n>>x;
+	    int sub=ceil(n/6);
+	    cout<<sub*x<<endl;
+	}
+	return 0;
+}
