@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t, n, x;
+	cin>>t;
+	while(t--){
+	    cin>>n>>x;
+	    float slice=n*x;
+	    int pizza=ceil(slice/4);
+	    cout<<pizza<<endl;
+	}
+	return 0;
+}
