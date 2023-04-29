@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, w, x, y, z;
+	cin>>t;
+	while(t--){
+	    cin>>w>>x>>y>>z;
+	    int rem=x-w;
+	    int tot=y*z;
+	    if(tot==rem) cout<<"filled"<<endl;
+	    else if(tot>rem) cout<<"overflow"<<endl;
+	    else cout<<"unfilled"<<endl;
+	}
+	return 0;
+}
