@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, x, y, z;
+	float a, b, c;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y>>z;
+	    a=(x+y)/2; //avg of x & y
+	    b=(z+y)/2; //avg of z & y
+	    c=(x+z)/2; //avg of x & z
+	    if(a<35 || b<35 || c<35) cout<<"fail"<<endl;
+	    else cout<<"pass"<<endl;
+	}
+	return 0;
+}
