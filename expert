@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	float x, y;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    float ap=(y/x) * 100;
+	    if(ap>=50) cout<<"yes"<<endl;
+	    else cout<<"no"<<endl;
+	}
+	return 0;
+}
