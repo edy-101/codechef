@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int t, a, b;
+	cin>>t;
+	while(t--){
+	    cin>>a>>b;
+	    int x=10*a;
+	    int y=5*b;
+	    if (x>y) cout<<"First"<<endl;
+	    else if(y>x) cout<<"Second"<<endl;
+	    else cout<<"Any"<<endl;
+	}
+	return 0;
+}
