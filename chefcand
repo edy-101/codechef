@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	float n, x;
+	cin>>t;
+	while(t--){
+	    cin>>n>>x;
+	    if(x>=n) cout<<"0"<<endl;
+	    else{
+	        float rem= n-x;
+	        cout<<ceil(rem/4)<<endl;
+	    }
+	}
+	return 0;
+}
