@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n, x, rem, mini;
+	    cin>>n>>x;
+	    rem= n-x;
+	    mini= min(x, rem);
+	    cout<<mini<<endl;
+	}
+	return 0;
+}
