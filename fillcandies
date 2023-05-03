@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float n, k, m;
+	    cin>>n>>k>>m;
+	    float bag=k*m;
+	    if(n<=bag) cout<<"1"<<endl;
+	    else{
+	        int num=ceil(n/bag);
+	        cout<<num<<endl;
+	    }
+	}
+	return 0;
+}
