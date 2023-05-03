@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float x, y, diff;
+	    cin>>x>>y;
+	    if(x<y){
+	       diff=y-x;
+	       int num= ceil(diff/8);
+	       cout<<num<<endl;
+	    }
+	    else cout<<"0"<<endl;
+	}
+	return 0;
+}
