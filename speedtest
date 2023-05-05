@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float a, b, x, y;
+	    cin>>a>>x>>b>>y;
+	    float sa=a/x; //speed of alice
+	    float sb=b/y; //speed of bob
+	    if(sa>sb) cout<<"alice"<<endl; //alice is driving faster
+	    else if(sb>sa) cout<<"bob"<<endl; //bob is driving faster
+	    else cout<<"equal"<<endl; //both are driving at same speed
+	}
+	return 0;
+}
