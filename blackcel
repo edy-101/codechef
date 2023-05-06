@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int n2= n*n;
+    int num=n2/2;
+    cout<<num;
+	return 0;
+}
