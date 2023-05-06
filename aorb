@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int x, y;
+        cin>>x>>y;
+        //chef solves a then b
+        int score1= (500-(2*x)) + (1000-(4*(x+y)));
+        //chef solves b then a
+        int score2= (1000-(4*y)) + (500-(2*(x+y)));
+        //maximum score that chef can score
+        int score= max(score1, score2);
+        cout<<score<<endl;
+    }
+	return 0;
+}
