@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        float n;
+        cin>>n;
+        int num= ceil(n/10);
+        cout<<num<<endl;
+    }
+	return 0;
+}
