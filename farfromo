@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int x1, y1, x2, y2;
+        cin>>x1>>y1>>x2>>y2;
+        float alex= sqrt((x1*x1) + (y1*y1)); //distance of alex from chef
+        float bob= sqrt((x2*x2) + (y2*y2)); //distance of bob from chef
+        //distance comparison
+        if(alex>bob) cout<<"alex"<<endl;
+        else if (bob>alex) cout<<"bob"<<endl;
+        else if (bob==alex) cout<<"equal"<<endl;
+    }
+	return 0;
+}
