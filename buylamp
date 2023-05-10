@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n, k, x, y, amt;
+	    cin>>n>>k>>x>>y;
+	    // atleast k lamps of n lamps should be red, price of k red lamps= k*x
+	    // he wants to pay minimum price for n lamps
+	    // so if n>k, price of n-k lamps should be of the price that is minimum b/w x & y
+	    //see example test case 3
+	    amt= (k*x) + ((n-k) * (min(x, y)));
+	    cout<<amt<<endl;
+	}
+	return 0;
+}
