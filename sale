@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a, b, c, mini, price;
+	    cin>>a>>b>>c;
+	    mini= min(a, min(b, c)); // calculate the minimum price of a, b, c
+	    price= a+b+c-mini; //deduct the minimum price from the total price
+	    cout<<price<<endl; //this is the amt chef needs to pay
+	}
+	return 0;
+}
