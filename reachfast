@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float a, b, k, diff;
+	    cin>>a>>b>>k;
+	    diff= abs(b-a); // difference of distance between chef and chefina
+	    int step= ceil(diff/k); //minimum steps req. by chef
+	    cout<<step<<endl;
+	}
+	return 0;
+}
