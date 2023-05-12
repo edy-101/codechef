@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y, i=1, t=0;
+        cin >> x >> y;
+        while (y < x) {
+            y = y + i;
+            i = i + 1;
+            t = t + 1;
+        }
+        cout << t << endl;
+    }
+    return 0;
+}
