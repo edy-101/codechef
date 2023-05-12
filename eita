@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y, d, z;
+        cin>>d>>x>>y>>z;
+        int work1= x*7; //1st way
+        int work2=(d*y) + ((7-d)*z); //2nd way
+        int work= max(work1, work2); //maximum work that can be done
+        cout<<work<<endl;
+    }
+    return 0;
+}
