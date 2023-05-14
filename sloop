@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int m, s, count;
+	    cin>>m>>s;
+	    count=floor(m/s);
+	    cout<<count<<endl;
+	}
+	return 0;
+}
