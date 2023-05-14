@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int X, x, Y, y, count;
+	    cin>>x>>y>>X>>Y;
+	    count=(Y/y) + (X/x);
+	    cout<<count<<endl;
+	}
+	return 0;
+}
