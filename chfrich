@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+int a, b, x, t, yrs;
+cin>>t;
+while (t--) {
+    cin>>a>>b>>x;
+    yrs=(b-a)/x;
+    cout<<yrs<<endl;
+}
+	return 0;
+}
