@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b, c, t;
+    cin>>t;
+    while (t--) {
+        cin>>a>>b>>c;
+        int p1=a+c;
+        int maxi= max(p1, b); //possibility is either he invites ppl from a & c or b
+        cout<<maxi<<endl;
+    }
+	return 0;
+}
