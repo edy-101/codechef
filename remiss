@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int a, b;
+        cin>>a>>b;
+        int mini= max(a, b);// minimum times chef entered the building
+        int maxi= a+b;//maximum times chef can possible enter the building
+        cout<<mini<<" "<<maxi<<endl;
+    }
+	return 0;
+}
