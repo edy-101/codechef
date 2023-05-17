@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+       int n, l, x, amt;
+       cin>>n>>l>>x;
+       //n slippers
+       //l left slipperes
+       int r=n-l; //r right slippers
+       if(r>=l){ //if there are less left slippers then l pairs of slippers can be sold
+           amt=l*x;
+           cout<<amt<<endl;
+       }
+       
+       else{ //if there are less right slippers then r pairs of slippers can be sold
+           amt=r*x;
+           cout<<amt<<endl;
+       }
+    }
+	return 0;
+}
