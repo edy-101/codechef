@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b;
+	cin>>a>>b;
+	int res= a+b+(a*b);
+	if(res==111) cout<<"Yes";
+	else cout<<"no";
+	return 0;
+}
