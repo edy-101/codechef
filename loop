@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a, b, m;
+	    cin>>a>>b>>m;
+	    int way1= abs(a-b);
+	    int way2= abs(abs(a-b)-m);
+	    int mini= min(way1, way2);
+	    cout<<mini<<endl;
+	}
+	return 0;
+}
