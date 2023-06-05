@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y, h;
+	cin>>x>>y>>h;
+	int charge=x + ((h- 1)*y);
+	cout<<charge;
+	return 0;
+}
