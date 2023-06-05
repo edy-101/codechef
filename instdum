@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n, i, runs=0, count=0, balls= 0;
+	    cin>>n;
+	    
+	    for(i=1; i<=n; i++){
+	        int a;
+	        cin>>a;
+	        runs += a;
+	        balls++;
+	        if (runs == balls) count++;
+	    }
+	    
+	    cout<<count<<endl;
+	}
+	return 0;
+}
