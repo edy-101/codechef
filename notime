@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n, i, h, x;
+	cin>>n>>h>>x;
+	string ans="no";
+	for(i=0; i<n; i++){
+	    int a;
+	    cin>>a;
+	    if (x+a>=h){
+	        ans="yes";
+	    }
+	}
+	cout<<ans;
+	return 0;
+}
