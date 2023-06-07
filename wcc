@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int x;
+	    cin>>x;
+	    string win;
+	    cin>>win;
+	    int c=0, n=0, d=0;
+	    
+	    for(int i=0; i<win.length(); i++){
+	        if(win[i]=='C') c++;
+	        else if(win[i]=='N') n++;
+	        else d++;
+	    }
+	    
+	    if(c>n) cout<<60*x<<endl;
+	    else if (c<n) cout<<40*x<<endl;
+	    else cout<<55*x<<endl;
+	}
+	return 0;
+}
