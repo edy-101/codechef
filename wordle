@@ -5,14 +5,13 @@ int main() {
     string m, s, t;
     int tc, i;
     cin>>tc;
-    while (tc>0) {
+    while (tc--) {
         cin>>s>>t;
         for(i=0; i<5; i++) {
             if (s[i]==t[i]) cout<<"G";
             else cout<<"B";
         }
         cout<<endl;
-        tc--;
     }
 	return 0;
 }
