@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int a, b;
+	cin>>a>>b;
+	int sum=a+b;
+	int pro=a*b;
+	int diff=abs(pro-sum);
+	cout<<diff;
+	return 0;
+}
