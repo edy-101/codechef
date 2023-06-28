@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n, x, k, p;
+	    cin>>n>>x>>k>>p;
+	    int total;
+	    if(k==0){
+	        total=p;
+	    }
+	    else if(k>0 &&k<=x){
+	        total=p+(k*10);
+	    }
+	    else if(k>x &&k<n){
+	        total=p+(x*10)+((k-x)*5);
+	    }
+	    else{
+	        total=p+(x*10)+((n-x)*5)+ 20;
+	    }
+	    cout<<total<<endl;
+	}
+	return 0;
+}
