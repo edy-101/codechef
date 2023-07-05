@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    cin >> t;
+    while (t--){
+        int a[3], b[3];
+        
+        for (int i = 0; i < 3; i++){
+            cin >> a[i];
+        }
+            
+        for (int i = 0; i < 3; i++){
+            cin >> b[i];
+        }
+
+        // Sort the rolls in descending order
+        sort(a, a + 3, greater<int>());
+        std::sort(b, b + 3, greater<int>());
+
+        int alice = a[0] + a[1];  // Sum of highest 2 rolls for Alice
+        int bob = b[0] + b[1];    // Sum of highest 2 rolls for Bob
+
+        if (alice > bob) cout<<"Alice"<<endl;
+        else if (alice < bob) cout<<"Bob"<<endl;
+        else cout<<"Tie"<<endl;
+    }
+    return 0;
+}
