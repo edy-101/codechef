@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+std::string getRotKCipher(const std::string& s, const std::string& t, const std::string& u) {
+    int k = 0;
+    for (int i = 0; i < s.length(); i++) {
+        int diff = t[i] - s[i];
+        if (diff < 0)
+            diff += 26; // 26 is the number of characters in the English alphabet
+        if (k == 0)
+            k = diff;
+        else if (k != diff)
+            return "ERROR"; // The given strings S and T are not compatible with ROT-K cipher
+    }
+
+    std::string rotKCipher;
+    for (char c : u) {
+        if (c >= 'a' && c <= 'z') {
+            char rotated = 'a' + (c - 'a' + k) % 26;
+            rotKCipher += rotated;
+        } else if (c >= 'A' && c <= 'Z') {
+            char rotated = 'A' + (c - 'A' + k) % 26;
+            rotKCipher += rotated;
+        } else {
+            rotKCipher += c;
+        }
+    }
+
+    return rotKCipher;
+}
+
+int main() {
+    int q;
+    std::cin >> q;
+
+    while (q--) {
+        int n;
+        std::string s, t, u;
+
+        std::cin >> n;
+        std::cin >> s;
+        std::cin >> t;
+        std::cin >> u;
+
+        std::string rotKCipher = getRotKCipher(s, t, u);
+        std::cout << rotKCipher << std::endl;
+    }
+
+    return 0;
+}
