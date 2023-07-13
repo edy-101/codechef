@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, x, y;
+	cin>>a>>b>>x>>y;
+
+	int m= (a*2) + (b*1);
+	int r= (x*2) + (y*1);
+	
+	if (m>r) cout<<"Messi";
+	else if(r>m) cout<<"Ronaldo";
+	else cout<<"Equal";
+
+	return 0;
+}
