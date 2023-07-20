@@ -1,0 +1,40 @@
+//C++
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t; // test cases
+    cin >> t;
+    while (t--) {
+        double x, y, r;
+        cin >> x >> y >> r;
+        double extra_sticks = r / 30; // number of extra mozzarella sticks chef eats
+        double total_sticks = x + extra_sticks; // total sticks he ate
+        int plates_ordered = ceil(total_sticks / y); // maximum plates chef ordered
+        cout << plates_ordered << endl;
+    }
+    return 0;
+}
+
+
+//JAVA
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt(); // test cases
+        while (t > 0) {
+            double x, y, r;
+            x = scanner.nextDouble();
+            y = scanner.nextDouble();
+            r = scanner.nextDouble();
+            double extra_sticks = r / 30; // number of extra mozzarella sticks chef eats
+            double total_sticks = x + extra_sticks; // total sticks he ate
+            int plates_ordered = (int) Math.ceil(total_sticks / y); // maximum plates chef ordered
+            System.out.println(plates_ordered);
+            t--;
+        }
+	}
+}
