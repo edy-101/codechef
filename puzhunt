@@ -1,0 +1,26 @@
+//C++
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    if (n >= 6 && n <= 8) cout << "Yes";
+    else cout << "No";
+    return 0;
+}
+
+
+//JAVA
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner read= new Scanner(System.in);
+		int n= read.nextInt();
+		
+		if (n>=6 && n<=8) System.out.print("Yes");
+		else System.out.print("No");
+	}
+}
