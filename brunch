@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t, x, y;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    int max= floor(x/y);
+	    if (max>20) cout<<20<<endl;
+	    else cout<<max<<endl;
+	}
+	return 0;
+}
