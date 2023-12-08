@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n, m, x, y;
+	cin>>n>>m;
+	cin>>x>>y;
+	int count= (n*x) + (m*y);
+	cout<<count;
+	return 0;
+}
