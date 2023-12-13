@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t, n, x, d, total, days, total_days;
+	cin>>t;
+	while(t--){
+	    cin>>n>>x>>d;
+	    //n- total buns available in mall, x- buns needed per head per day, d- can survive these days
+	    total= x*5; // total buns needed per day
+	    days= floor(n/total); //days that n buns will remain
+	    total_days= days + d; //total days they'll survive
+	    cout<<total_days<<endl;
+	}
+	return 0;
+}
