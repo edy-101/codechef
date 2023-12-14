@@ -1,0 +1,8 @@
+t = int(input())
+for i in range(0, t, 1):
+    n = int(input())
+    print(n * (n-1))
+
+# n chances are there for ppl to be captain, the same person cannot be captain and vice-captain
+# therefore n-1 chances to be vice-captain
+# total different choices => n * n-1
