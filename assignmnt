@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(0, t, 1):
+    x, y, z = map(int, input().split())
+    total_time_needed = x * y
+    minute = z*24*60
+    
+    if total_time_needed <= minute:
+        print('yes')
+    else:
+        print('no')
