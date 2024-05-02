@@ -1,0 +1,7 @@
+import math
+t=int(input())
+for i in range(0, t, 1):
+    x=int(input())
+    com= (20 / 100) * x
+    mini = math.ceil(100 / com)
+    print(mini)
