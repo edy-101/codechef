@@ -1,0 +1,17 @@
+import math as m
+t = int(input())
+for _ in range(t):
+    inp = input()
+    n, b, k = map(int, inp.split())
+    g = n-b
+    #g, b, n is the umber of girls, boys and total students respectively
+
+    b_rem = b % k #remaining boys for dance
+    g_rem = g % k #remaining girls for dance
+
+    #remaining for reading
+    if (b_rem < g_rem):
+        c = g_rem - b_rem
+    else:
+        c = b_rem - g_rem
+    print(c)
