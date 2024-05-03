@@ -1,0 +1,10 @@
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    # k friend's share (rounded down)
+    individual_share = n // (k + 1)   
+    # Total amount paid by friends (rounded down)
+    total_paid_by_friends = individual_share * k
+    # Total amount paid by you
+    total_paid_by_you = n - total_paid_by_friends
+    print(total_paid_by_you)
