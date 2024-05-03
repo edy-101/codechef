@@ -1,0 +1,10 @@
+t = int(input())
+for _ in range(t):
+    inp = input()
+    x, y, z = map(int, inp.split())
+    total = x * y
+    per = (z/total)*100
+    if per>50:
+        print('yes')
+    else: 
+        print('no')
