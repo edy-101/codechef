@@ -1,0 +1,13 @@
+ini = input()
+change = input()
+
+r1, r2 = map(int, ini.split())
+d1, d2 = map(int, change.split())
+
+dom = r1 + d1
+eve = r2 + d2
+
+if (dom>eve):
+    print('Dominater')
+else:
+    print('Everule')
