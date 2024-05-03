@@ -1,0 +1,10 @@
+info = input()
+w, h = map(int, info.split())
+
+weight = 60
+height = 130
+
+if weight<=w and height>=h:
+    print('yes')
+else:
+    print('no')
