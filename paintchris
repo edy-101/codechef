@@ -1,0 +1,6 @@
+t = int(input())
+for _ in range(t):
+    x, y, z = map(int, input().split())
+    area= x * y #area of 1 wall
+    cost = 2 * area #cost of painting 1 wall
+    print(z//cost) #no. of walls that can be painted
