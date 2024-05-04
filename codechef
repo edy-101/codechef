@@ -1,0 +1,5 @@
+n = int(input())
+if n in [4, 11, 18, 25]:
+    print("yes")
+else:
+    print("no")
