@@ -1,0 +1,8 @@
+t = int(input())
+for _ in range(t):
+    x = int(input())
+    rem = x//127
+    if rem>0:
+        print('yes')
+    else:
+        print('no')
