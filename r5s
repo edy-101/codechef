@@ -1,0 +1,6 @@
+x, y = map(int, input().split())
+rate = x+y
+if rate>=2000:
+    print('yes')
+else:
+    print('no')
