@@ -1,0 +1,18 @@
+t = int(input())
+for _ in range(t):
+    a, b = map(int, input().split())
+    str_a = str(a)
+    str_b = str(b)
+    a_rev = int(str_a[::-1])
+    b_rev = int(str_b[::-1])
+
+    if a>b:
+        print('yes')
+    elif a_rev>b:
+        print('yes')
+    elif a>b_rev:
+        print('yes')
+    elif a_rev>b_rev:
+        print('yes')
+    else:
+        print('no')
