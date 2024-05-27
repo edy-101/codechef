@@ -1,0 +1,6 @@
+t = int(input())
+for _ in range(t):
+    x = int(input())
+    ret = 100 - x
+    mod = ret % 10
+    print(ret - mod)
