@@ -1,0 +1,7 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    num = n//4
+    n = n % 4
+    num += n//2
+    print(num)
