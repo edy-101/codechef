@@ -1,0 +1,6 @@
+x, y = map(int, input().split())
+loop = 2 * (x + y)
+if loop >=1000:
+    print('yes')
+else:
+    print('no')
