@@ -1,0 +1,14 @@
+t = int(input())
+for _ in range(t):
+    x, y = map(int, input().split())
+    count = 0
+    if x==0 or y==0:
+        count = 0
+    elif x==1 or y==1:
+        count = 1
+    elif x%3==0 and y%3==0:
+        count=0
+    elif x%3 == y%3:
+        rem = x % 3
+        count = rem
+    print(count)
